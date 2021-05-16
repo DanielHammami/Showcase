@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+
+@import '~antd/dist/antd.css';
+
+h4 {
+  color: white;
+  font-weight: bold
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Login-page{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Login-input{
+  margin: 15px;
+  width: 400px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Sign {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-bottom: 15px;
+  border-radius: 5%;
+  border-color: white;
+  background-color: rgba(63,169,255,0.5);
+  margin: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.Sign .Login-input{
+  width: 250px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.HomeThemes{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.Banner {
+  height: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.Card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.myArticle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.pageContainer h1 {
+  margin: 30px 0 0;
 }
