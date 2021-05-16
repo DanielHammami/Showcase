@@ -1,6 +1,3 @@
-# See the app on Heroku
-[Run the app](https://young-eyrie-94245.herokuapp.com/)
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
