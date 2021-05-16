@@ -12,7 +12,7 @@ import { Button, Card } from 'react-bootstrap'
 // CSS
 import '../App.css'
 
-const MY_API_KEY = 'e70b9cd8e8774eeaa25edb59f0059ff5' // a3a1d54c0750465f8d2d07447e71648b
+const MY_API_KEY = '0bbde4e1dcde4badaeb5f3ba7188f81b' // e70b9cd8e8774eeaa25edb59f0059ff5 - a3a1d54c0750465f8d2d07447e71648b
 
 function Home(props) {
   const [sourceList, setSourceList] = useState([])
@@ -49,10 +49,10 @@ function Home(props) {
         <Card.Body>
           <Card.Title>{ article.title }</Card.Title>
           <Card.Text>
-            { article.description }
+            { article.description.slice(0, 30) + '...' }
           </Card.Text>
           <Link to='/myarticle'>
-            <Button onClick={ () => props.addArticle(article) } variant="primary">Details</Button>
+            <Button onClick={ () => props.addArticle(article) } variant="primary">Read more</Button>
           </Link>
         </Card.Body>
       </Card>
